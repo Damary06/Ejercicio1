@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        // Paso 3: Crear la variable numeroDeElementos
+        var numeroDeElementos = 10; // Aquí el profesor puede manipular el número de elementos
+
+        // Paso 6: Función para generar la serie Fibonacci
+        function fibonacci(numeroDeElementos) {
+            var fib = [0, 1];
+            for (var i = 2; i < numeroDeElementos; i++) {
+                fib[i] = fib[i - 1] + fib[i - 2];
+            }
+            return fib;
+        }
+
+        // Paso 7: Imprimir la serie Fibonacci en la consola
+        console.log("Serie Fibonacci:");
+        console.log(fibonacci(numeroDeElementos));
+    </script>
+</body>
+</html>
